@@ -1,0 +1,8 @@
+webb:
+  build: .
+  ports:
+   - "5001:5000"
+  links:
+   - redis
+redis:
+  image: redis
